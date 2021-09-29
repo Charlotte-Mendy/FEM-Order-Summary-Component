@@ -110,13 +110,17 @@ body {
 }
 
 .link {
-  color: var(--bright-blue);
   flex: 1;
   text-align: right;
 }
 
-.link a:active {
+.link a,
+.link a:visited {
   color: var(--bright-blue);
+}
+
+.link a:hover {
+  opacity: 75%;
   text-decoration: none;
 }
 
@@ -137,7 +141,7 @@ body {
   margin: 16px 0;
 }
 
-.payment-btn:active {
+.payment-btn:hover {
   opacity: 75%;
 }
 
@@ -147,7 +151,7 @@ body {
   color: var(--desaturated-blue);
 }
 
-.cancel-btn:active {
+.cancel-btn:hover {
   color: var(--dark-blue);
   font-weight: var(--fw900);
 }
