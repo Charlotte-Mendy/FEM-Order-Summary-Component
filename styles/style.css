@@ -1,0 +1,193 @@
+/* & Global */
+/*& ----------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  /* Font weight */
+  --fw500: 500;
+  --fw700: 700;
+  --fw900: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pale-blue);
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Red Hat Display", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: var(--fw500);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+/* & Card */
+/*& ----------------------------------------------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 340px;
+  overflow: hidden;
+}
+
+.illustration {
+  border-radius: 15px 15px 0 0;
+}
+
+.summary {
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 20px;
+  font-weight: var(--fw900);
+  margin: 16px 0 0;
+}
+
+.description {
+  color: var(--desaturated-blue);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.pricing {
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.icon {
+  display: flex;
+}
+
+.plan,
+.link {
+  font-weight: var(--fw900);
+}
+
+.details {
+  margin-left: 16px;
+}
+
+.plan {
+  color: var(--dark-blue);
+}
+
+.price {
+  color: var(--desaturated-blue);
+}
+
+.link {
+  color: var(--bright-blue);
+  flex: 1;
+  text-align: right;
+}
+
+.link a:active {
+  color: var(--bright-blue);
+  text-decoration: none;
+}
+
+.payment-btn,
+.cancel-btn {
+  font-family: "Red Hat Display", Arial, sans-serif;
+  font-weight: var(--fw700);
+  padding: 16px;
+  width: 100%;
+}
+
+.payment-btn {
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 15px 20px -7px var(--desaturated-blue);
+  color: #fff;
+  margin: 16px 0;
+}
+
+.payment-btn:active {
+  opacity: 75%;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--desaturated-blue);
+}
+
+.cancel-btn:active {
+  color: var(--dark-blue);
+  font-weight: var(--fw900);
+}
+
+/* & Infos */
+/*& ----------------------------------------------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* & Media queries */
+/*& ----------------------------------------------- */
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-attachment: fixed;
+  }
+
+  .card {
+    width: 450px;
+  }
+
+  .summary {
+    padding: 20px 35px;
+  }
+
+  .title {
+    font-size: 25px;
+    margin: 16px 0 0;
+  }
+
+  .description {
+    margin-bottom: 0;
+  }
+}
