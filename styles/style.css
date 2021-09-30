@@ -117,6 +117,7 @@ body {
 .link a,
 .link a:visited {
   color: var(--bright-blue);
+  cursor: pointer;
 }
 
 .link a:hover {
@@ -131,6 +132,7 @@ body {
   padding: 1em;
   width: 100%;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .payment-btn {
